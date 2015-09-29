@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+
+/* Baseline formatting. Everything inherits the font, and content text inherits all the font settings */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: #161616;
+    background-color: #f1f1f1;
+}
+
+/* Paragraphs will left-justify within the content div */
+p{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+/* Set up a nice title/subtitle typesetting for the header text, and add shadow because why not? */
+#TitleArea h1{
+    text-align: center;
+    font-size: 3em;
+    line-height: 10%;
+    text-shadow: 15px 15px 24px #080808;
+}
+
+#TitleArea h2{
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 10px 10px 20px #080808;
+}
+
+/* Center the nav links */
+#NavArea{
+    text-align: center;
+}
+
+/* Style the navigation links themselves */
+#NavArea a{
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #080808;
+    background-color: #d0d0d0;
+    padding: 10px 10px;
+    margin: 40px 0;
+}
+
+/* Probably want to swap this out for something more attractive later.
+   For now, simply underline to emphasize interactivity for the nav links */
+#NavArea a:hover {
+    text-decoration: underline;
+}
+
+/* Style the active class for a visual cue as to which page is being viewed */
+#NavArea .active{
+    background-color: #006cff;
+    color: #ffffff;
+    z-index: 2;
+    box-shadow: none;
+}
+
+/* Content area is a raised  box in the middle */
+#ContentArea{
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+    background-color: #d0d0d0;
+    text-align: center;
+    box-shadow: 20px 20px 32px -10px #080808;
+}
+
+#ContentArea h2{
+    text-align: center;
+}
+
+/* neat little hr style, grabbed from https://css-tricks.com/examples/hrs/
+   (this is style-two) */
+#ContentArea hr.mainRule{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+
+/* Generic class for italicized text */
+.ital{
+    font-style: italic;
+}
+
+/* Styling for assignment section headings */
+#ContentArea h3{
+    margin-left: 8px;
+    text-align: left;
+    font-size: 1.2em;
+    color: #006cff;
+    font-style: italic;
+}
